@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    position: fixed;
+    bottom: 2rem;
+    left: 25%;
+    width: 45rem;
+    border-radius: 2rem;
+    padding: 1.3rem 0;
+    background-color: #21212194;
+    z-index: 1000;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+nav ul li > a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li > a.active{
+    background: #fff;
+    padding: .7rem 2rem;
+    color: #000;
+    border-radius: 2rem;
+
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    border-radius: 0 0 2.5rem 2.5rem ;
+
+}
+header .header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+}
+header .header-container .brand-name{
+    width: 5rem;
+    height: 3rem;
+}
+header .header-container .brand-name img{
+    width: 5rem;
+    height: 3rem;
+    object-fit: contain;
+}
+header .header-container .btns{
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .header-container .btns > a{
+    text-decoration: none;
+}
+header .header-container .btns .login{
+    color: #fff;
+}
+header .header-container .btns .signup{
+    background: greenyellow;
+    align-items: center;
+    padding: .5rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: #000;
+}
+header .contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 20rem;
+}
+header .contents h3{
+    background: rgb(1, 41, 1);
+    padding: 1rem 4rem;
+    border-radius: 2rem;
+    color: greenyellow;
+    font-weight: 400;
+}
+header .contents h2{
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+header .contents h2 > span{
+    background: rgb(85, 255, 47);
+    color: rgb(1, 41, 1);
+    padding: 0 1rem;
+}
+header .contents h1{
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+header .contents p{
+    color: rgb(143, 143, 143);
+    letter-spacing: 1px;
+}
+header .contents .btn{
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+header .contents .btn > .loginbtn{
+    background-color: #1b1a1a;
+    color: #fff;
+    text-decoration: none;
+    padding: .7rem 2.2rem;
+    border-radius: 2rem;
+}
+header .contents .btn > .Get_started{
+    color: #000;
+    background: rgb(85, 255, 47);
+    padding: .7rem 2.2rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    font-weight: 600;
+}
+header .boxes{
+    margin-top: 1rem;
+    color: #fff;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+}
+header .boxes span{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 15rem;
+    margin: 1rem;
+    padding: .7rem 2.5rem;
+    border-radius: 2rem;
+    transform: skewY(-11deg);
+    animation: bend 2s infinite ease-in-out;
+}
+@keyframes bend {
+    0%{
+        transform: skewY(-11deg);
+    }
+    50%{
+        transform: skewY(15deg);
+    }
+    100%{
+        transform: skewY(-11deg);
+    }
+}
+header .img{
+    position: absolute;
+    right: 1rem;
+    bottom: -20rem;
+}
+header .img img{
+    width: 30rem;
+    height: 35rem;
+    object-fit: contain;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section > h5 {
+    color: gray;
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+section > h2{
+    color: gray;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+section > h1{
+    font-size: 3rem;
+}
+section > h1 span{
+    color: gray;
+}
+section .circles {
+    display: flex;
+    width: 100%;
+    height: 25rem;
+    margin-top: 1rem;
+}
+section .circle{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(85, 255, 47, 0.586);
+    color: rgb(1, 41, 1);
+}
+section #img{
+    overflow: hidden;
+    transform: translateX(18rem) translateY(5rem);
+}
+
+section #img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+section .circle:nth-child(2n-1){
+    transform: translateX(16rem);
+}
+section .circle:nth-child(2n){
+    margin-right: 5rem;
+    transform: translateX(20rem) translateY(20rem);
+
+}
+section > img{
+    width: 20rem;
+    height: 20rem;
+    object-fit: contain;
+    position: absolute;
+    left: -7rem;
+    bottom: 3rem;
+}
