@@ -169,7 +169,7 @@ header .img img{
     height: 35rem;
     object-fit: contain;
 }
-section{
+.circle-section{
     position: relative;
     width: 100%;
     height: 100vh;
@@ -178,30 +178,30 @@ section{
     justify-content: center;
     align-items: center;
 }
-section > h5 {
+.circle-section > h5 {
     color: gray;
     font-weight: 100;
     margin-bottom: 2rem;
 }
-section > h2{
+.circle-section > h2{
     color: gray;
     font-size: 2rem;
     font-weight: 400;
     margin-bottom: 1rem;
 }
-section > h1{
+.circle-section > h1{
     font-size: 3rem;
 }
-section > h1 span{
+.circle-section > h1 span{
     color: gray;
 }
-section .circles {
+.circle-section .circles {
     display: flex;
     width: 100%;
     height: 25rem;
     margin-top: 1rem;
 }
-section .circle{
+.circle-section .circle{
     width: 12rem;
     height: 12rem;
     border-radius: 50%;
@@ -212,30 +212,262 @@ section .circle{
     background-color: rgba(85, 255, 47, 0.586);
     color: rgb(1, 41, 1);
 }
-section #img{
+.circle-section #img{
     overflow: hidden;
     transform: translateX(18rem) translateY(5rem);
 }
 
-section #img img{
+.circle-section #img img{
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-section .circle:nth-child(2n-1){
+.circle-section .circle:nth-child(2n-1){
     transform: translateX(16rem);
 }
-section .circle:nth-child(2n){
+.circle-section .circle:nth-child(2n){
     margin-right: 5rem;
     transform: translateX(20rem) translateY(20rem);
 
 }
-section > img{
+.circle-section > img{
     width: 20rem;
     height: 20rem;
     object-fit: contain;
     position: absolute;
     left: -7rem;
     bottom: 3rem;
+}
+
+.handsUp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    width: 100%;
+    padding: 2.5rem;
+}
+.handsUp .handsUp_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90rem;
+    padding: 2rem;
+    border-radius: 4rem 4rem 0 0;
+    background-color: #000;
+
+}
+.handsUp .handsUp_container img{
+    width: 6rem;
+    object-fit: contain;
+    margin-bottom: 2rem;
+}
+.handsUp .handsUp_container h1{
+    font-size: 2.5rem;
+    color: rgb(85, 255, 47);
+}
+.handsUp .handsUp_container .paragraph{
+    margin: 1rem 2.5rem;
+    font-size: 1rem;
+    color: rgb(2, 60, 2);
+
+}
+.handsUp .handsUp_container .paragraph strong{
+    color: rgba(85, 255, 47, 0.771);
+}
+.handsUp .handsUp_container .btn{
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.handsUp .handsUp_container .btn > .loginbtn{
+    background-color: #1b1a1a;
+    color: #fff;
+    text-decoration: none;
+    padding: .7rem 2.2rem;
+    border-radius: 2rem;
+}
+.handsUp .handsUp_container .btn > .Get_started{
+    color: #000;
+    background: rgb(85, 255, 47);
+    padding: .7rem 2.2rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    font-weight: 600;
+}
+.handsUp .handsUp_container .handsUp-img{
+    width: 60rem;
+    height: 25rem;
+    margin-top: 2rem;
+    border-radius: 4rem 4rem 0 0;
+    background-color: #fff;
+}
+.handsUp .handsUp_container .handsUp-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.designs_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.designs_container > h5 {
+    color: gray;
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+.designs_container > h2{
+    color: gray;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.designs_container > h1{
+    font-size: 3rem;
+}
+.designs_container > h1 span{
+    color: gray;
+}
+.designs_container .screen-container{
+    width: 60rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.designs_container .screen-container .first-screen{
+    width: 25rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+}
+.designs_container .screen-container .second-screen{
+    width: 25rem;
+    padding: 1.5rem 1.5rem 0rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(137, 43, 226, 0.136);
+    filter: blur(.4px);
+    border-radius: 2rem;
+}
+.designs_container .screen-container .second-screen .card-head{
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.designs_container .screen-container .second-screen .card-head h1{
+    margin-bottom: .6rem;
+}
+.designs_container .screen-container .second-screen .card-head h5{
+    background-color: rgba(137, 43, 226, 0.105);
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    margin-bottom: .5rem;
+}
+.designs_container .screen-container .second-screen .card-head p{
+    color: rgb(53, 53, 53);
+    margin-bottom: .5rem;
+}
+.designs_container .screen-container .second-screen .card-body{
+    width: 100%;
+}
+.designs_container .screen-container .second-screen .card-body img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.designs_container .screen-container .third-screen{
+    width: 25rem;
+    height: 15rem;
+    margin-top: 1rem;
+    padding: 1.5rem 1.5rem 0rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background: rgba(137, 43, 226, 0.136);
+    filter: blur(.4px);
+    border-radius: 2rem;
+}
+.designs_container .screen-container .third-screen .card-head{
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.designs_container .screen-container .third-screen .card-head h5{
+    background-color: rgba(137, 43, 226, 0.105);
+    width: 8rem;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    margin-bottom: .5rem;
+    color: rgba(137, 43, 226, 0.899);
+}
+.designs_container .screen-container .third-screen .card-head h1{
+    margin-bottom: 2rem;
+}
+.designs_container .screen-container .third-screen .btn > .loginbtn{
+    background-color: gray;
+    color: #000;
+    text-decoration: none;
+    padding: 1rem 2.2rem;
+    border-radius: 2rem;
+}
+.designs_container .screen-container .forth-screen{
+    position: relative;
+    width: 30rem;
+    height: 15rem;
+    margin-top: 1rem;
+    padding: 1.5rem 1.5rem 0rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background: rgba(226, 168, 43, 0.105);
+    filter: blur(.4px);
+    border-radius: 2rem;
+}
+.designs_container .screen-container .forth-screen .card-head h5{
+    background-color: rgba(226, 168, 43, 0.232);
+    width: 8rem;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    margin-bottom: .5rem;
+    color: rgba(226, 168, 43, 0.899);
+}
+.designs_container .screen-container .forth-screen > .image1{
+    position: absolute;
+    right: 2rem;
+    bottom: 5rem;
+    width: 10rem;
+    object-fit: contain;
+    z-index: 10;
+}
+.designs_container .screen-container .forth-screen > .image2{
+    position: absolute;
+    right: 5rem;
+    bottom: 6rem;
+    width: 10rem;
+    object-fit: contain;
+}
+.designs_container .screen-container .forth-screen > .image3{
+    position: absolute;
+    right: 0;
+    bottom: 1rem;
+    width: 13rem;
+    object-fit: contain;
+    z-index: 1000;
 }
