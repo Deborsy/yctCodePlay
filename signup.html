@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="styles/signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <form id="signUpForm">
+          <h2>Create an Account</h2>
+    
+          <div class="input-group">
+            <input type="text" id="name" placeholder="Full Name" required>
+          </div>
+           
+          <div class="input-group">
+            <input type="email" id="email" placeholder="Email" required>
+          </div>
+    
+          <div class="input-group">
+            <input type="password" id="password" placeholder="Password" required>
+          </div>
+    
+
+          <!-- Phone Number Input with Country Code Selection -->
+            <div class="phone-input">
+                <select id="country-code" required>
+                    <option value="+234">🇳🇬 (+234)</option>
+                    <option value="+228">🇹🇬 (+228)</option>
+                    <option value="+233">🇬🇭 (+233)</option>
+                    <option value="+227">🇳🇪 (+227)</option>
+                    <option value="+27">🇿🇦 (+27)</option>
+                    <option value="+218">🇱🇾 (+218)</option>
+                </select>
+                <input id="phone-number" type="tel" pattern="[0-9]{10}" placeholder="10-digit phone number" required>
+            </div>
+    
+          <div class="input-group">
+            <button type="submit" class="submit-btn">Sign Up</button>
+          </div>
+    
+          <p id="message"></p>
+    
+          <div class="signin-link">
+            <p>Already have an account? <a href="signin.html">Login here</a></p>
+          </div>
+        </form>
+      </div>
+
+  <script type="module" src="js/signup.js" defer></script>
+</body>
+</html>
